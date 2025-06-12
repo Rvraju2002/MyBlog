@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "25c396093efe5cb8",
+    "type": "split",
+    "children": [
+      {
+        "id": "56b51ddc906e5694",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7472d541dc933b6c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/2025/AI -AUTOMATION.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI -AUTOMATION"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eeafafff752e9556",
+    "type": "split",
+    "children": [
+      {
+        "id": "af241527e5e86850",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa9b98d9b88c1a3c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f23a0415d1bbfb14",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "quantization",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aebbd8e367147a55",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "51c932fa7b1a7c18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/2024/Money Earning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Money Earning"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "87137de8da3d8571",
+    "type": "split",
+    "children": [
+      {
+        "id": "1edba141298353f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e87d61f3804645a6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/2024/AI Research Paper notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for AI Research Paper notes"
+            }
+          },
+          {
+            "id": "8acd4cca75c3e7eb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/2024/AI Research Paper notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AI Research Paper notes"
+            }
+          },
+          {
+            "id": "b7bdc3b35155ae5f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b51d232df4d88068",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/2024/AI Research Paper notes.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of AI Research Paper notes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-kanban:Create new board": false
+    }
+  },
+  "active": "7472d541dc933b6c",
+  "lastOpenFiles": [
+    "Focus_Dashboard/2025-06-12.md",
+    "notes/2025/AI -AUTOMATION.md",
+    "notes/2024/Mongodb Notes.md",
+    "Images/mongodbMemoryModel.png",
+    "Focus_Dashboard/2025-06-09.md",
+    "notes/2025/Andriod App development.md",
+    "Images/Pasted image 20250608043752.png",
+    "notes/2025/Kotlin Notes.md",
+    "Focus_Dashboard/2025-06-08.md",
+    "Focus_Dashboard/2025-06-07.md",
+    "notes/2024/Android internal.md",
+    "notes/2025/Flutter Notes.md",
+    "notes/2024/Dart.md",
+    "Focus_Dashboard/2025-06-05.md",
+    "misc/Stock analysis.md",
+    "misc/Technical analysis.md",
+    "notes/2025/AI conference.md",
+    "Focus_Dashboard/2025-06-04.md",
+    "notes/2025/AI product development.md",
+    "notes/2024/Deep learning.md",
+    "Focus_Dashboard/2025-06-03.md",
+    "Focus_Dashboard/Jun 1 - Jun 8.md",
+    "notes/2024/Design pattern.md",
+    "notes/2025/Object oriented Programming.md",
+    "notes/2024/System Design.md",
+    "Focus_Dashboard/May 4 - May 11.md",
+    "Focus_Dashboard/2025-06-02.md",
+    "notes/2024/Transformer.md",
+    "hire",
+    "notes/2025/Untitled",
+    "projects",
+    "Images/Pasted image 20250503050851.png",
+    "Excalidraw/Embeding layer vis.excalidraw",
+    "Focus_Dashboard",
+    "Images/Pasted image 20250417183938.png",
+    "Images/Pasted image 20250417183709.png",
+    "Images/Pasted image 20250417100952.png",
+    "Images/Pasted image 20250416104840.png",
+    "Images/Screenshot from 2025-04-06 17-14-08.png",
+    "Images/Pasted image 20250331091303.png",
+    "Images/Pasted image 20250331091108.png",
+    "Excalidraw/LangchainAgent.excalidraw",
+    "Excalidraw/art-2024-02-11 07.27.35.excalidraw",
+    "Excalidraw/art-2024-01-19 19.56.09.excalidraw",
+    "Excalidraw/art-2025-02-02 16.21.19.excalidraw",
+    "post/2025",
+    "Untitled.canvas"
+  ]
+}

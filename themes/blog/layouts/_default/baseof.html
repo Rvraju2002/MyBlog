@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{- partial "head.html" . -}}
+    <body data-theme = "{{ .Site.Params.defaultColor }}" class="notransition">
+        <main class="main">
+            {{- partial "scriptsBodyStart.html" . -}}
+            {{- partial "header.html" . -}}
+            {{- block "main" . }}{{- end }}
+            {{- partial "footer.html" . -}}
+            {{- partial "scriptsBodyEnd.html" . -}}
+        </main>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "attachmentFolderPath": "Images",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "promptDelete": false
+}

@@ -1,0 +1,75 @@
+baseURL = 'https://programmerraja.github.io/blog'
+languageCode = 'en-us'
+title = 'programmerraja blog'
+theme = 'blog'
+publishDir='public/blog'
+
+enableEmoji = true
+
+ignoreFiles = ["content/template","template","misc/*"]
+
+[params]
+  toc = true # set to false to disable table of contents 'globally'
+  tocOpen = false # set to true to open table of contents by default
+  goToTop = true # set to false to disable 'go to top' b
+
+[menu]
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/post/'
+    weight = 20
+  
+   [[menu.main]]
+    pageRef="notes"
+    name = 'Notes'
+    url = '/notes/'
+    weight = 50
+
+  [[menu.main]]
+    pageRef="search"
+    name = 'Search'
+    url = 'search/'
+    weight = 50
+
+  [[menu.main]]
+    pageRef="tags"
+    name = 'Tags'
+    url = 'tags/'
+    weight = 50
+    
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+	[markup.tableOfContents]
+		startLevel = 2 
+		endLevel = 4 
+		ordered = true 
+
+[params.author]
+    avatar = "myself.jpeg"
+    intro = "K.Boopathi"
+    name = "K.Boopathi"
+    description = "Curious software developer exploring MERN stack and tech trends, blogging about web development, and sharing insights through a personal knowledge base. 🚀"
+
+[[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/programmerraja"
+
+[[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/programmerraja"
+
+[[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/programmerraja/"
+
+[[params.socialIcons]]
+    name = "Rss"
+    url = "index.xml"
+
+[outputs]
+	home = ["HTML","RSS","JSON"]

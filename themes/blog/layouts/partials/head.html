@@ -1,0 +1,60 @@
+<head>
+    {{- partial "meta/main.html" . }}
+    {{- hugo.Generator }}
+
+    {{/* Canonical link, RSS */}}
+
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{- with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
+    {{- end }}
+
+    {{- /* Styles */ -}}
+
+    {{- $style := resources.Get "sass/main.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "style.css") | minify | fingerprint }}
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">
+    {{- $code_syntax_highlight_css := resources.Get "code-highlight.css" | minify | fingerprint }}
+    <link href="{{ $code_syntax_highlight_css.RelPermalink }}" rel="stylesheet">
+
+    {{/* Favicons */}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ (resources.Get "icons/apple-touch-icon.jpeg").RelPermalink }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ (resources.Get "icons/favicon-32x32.png").RelPermalink }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ (resources.Get "icons/favicon-16x16.png").RelPermalink }}">
+    <link rel="mask-icon" href="{{ (resources.Get "icons/safari-pinned-tab.svg").RelPermalink }}">
+    <link rel="shortcut icon" href="{{ (resources.Get "icons/favicon.ico" | resources.Copy "favicon.ico").RelPermalink }}">
+
+    {{- partial "webmanifest.html" . -}}
+    {{- partial "browserconfig.html" . -}}
+
+    <meta name="theme-color" content="{{ .Site.Params.webmanifest.theme_color | default "#434648" }}">
+
+    {{/* SVG favicon for the modern web */}}
+    <link rel="icon" type="image/svg+xml" href="{{ (resources.Get "icons/favicon.svg").RelPermalink }}">
+
+    {{/* Katex support (enabled on specific pages). See 'helpers/katex.html' for more info. */}}
+
+    {{- if or .Params.math .Site.Params.math }}{{ partial "helpers/katex.html" . -}}{{- end -}}
+
+    {{/*  SCRIPTS  */}}
+
+   {{- /* Search */}}
+    {{- if (eq .Layout `search`) -}}
+    <link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+    {{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
+    {{- $fusejs := resources.Get "js/fuse.basic.min.js" }}
+    {{- if not site.Params.assets.disableFingerprinting }}
+    {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" | fingerprint }}
+    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}" integrity="{{ $search.Data.Integrity }}"></script>
+    {{- else }}
+    {{- $search := (slice $fusejs $fastsearch ) | resources.Concat "assets/js/search.js" }}
+    <script defer crossorigin="anonymous" src="{{ $search.RelPermalink }}"></script>
+    {{- end }}
+    {{- end -}}
+
+    {{/* Google analytics script. See config.toml to enable/disable this. */}}
+    {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+    {{/*  {{ template "_internal/google_analytics.html" . }}  */}}
+    {{- end -}}
+
+</head>
