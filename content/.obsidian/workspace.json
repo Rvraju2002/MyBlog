@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "projects/index.md",
+                "file": "notes/2025/AI -AUTOMATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "AI -AUTOMATION"
             }
           }
         ]
@@ -182,11 +182,12 @@
   },
   "active": "7472d541dc933b6c",
   "lastOpenFiles": [
+    "notes/2025/AI.md",
+    "notes/2025/AI -AUTOMATION.md",
+    "projects/index.md",
     "template/Template.md",
     "template/Daily Note.md",
-    "projects/index.md",
     "Focus_Dashboard/2025-06-13.md",
-    "notes/2025/AI -AUTOMATION.md",
     "Focus_Dashboard/2025-06-12.md",
     "notes/2024/Mongodb Notes.md",
     "Images/mongodbMemoryModel.png",
@@ -209,7 +210,6 @@
     "Focus_Dashboard/2025-06-03.md",
     "Focus_Dashboard/Jun 1 - Jun 8.md",
     "notes/2024/Design pattern.md",
-    "notes/2025/Object oriented Programming.md",
     "hire",
     "notes/2025/Untitled",
     "projects",
