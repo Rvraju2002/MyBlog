@@ -17,10 +17,13 @@ tags:
 5. Add a GitHub Actions workflow to easily run tests on CI
 6. Install Playwright browsers (default is true)
 7. To run the Playwright **npx playwright test**(this will run all test)
-8. To run specfic test npx playwright test --spec **path**
-9. To show report npx playwright show-report
+8. To run specfic test **npx playwright test --spec path**
+9. To show report **npx playwright show-report**
 10. To run playwright using ui mode **npx playwright test --ui**
-11. To update latest version of playwright **npm install -D @playwright/test@latest** and install latest binaries of browsers 
+11. To run run code with specific browser **npx playwright test --project=chromium**
+12. To run test in dubug mode **npx playwright test --debug**
+13. To run test in auto generate mode **npx playwright codegen**
+14. To update latest version of playwright **npm install -D @playwright/test@latest** and install latest binaries of browsers 
     **npx playwright install --with-deps**
 
 ## System requirements[​](https://playwright.dev/docs/intro#system-requirements "Direct link to System requirements")
