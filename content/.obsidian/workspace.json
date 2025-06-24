@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/2025/AI -AUTOMATION.md",
+                "file": "notes/2025/AI_AUTOMATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI -AUTOMATION"
+              "title": "AI_AUTOMATION"
             }
           }
         ]
@@ -184,6 +184,7 @@
   "lastOpenFiles": [
     "notes/2025/MCP SERCER.md",
     "notes/2025/AI -AUTOMATION.md",
+    "notes/2025/AI_AUTOMATION.md",
     "notes/2025/AI.md",
     "projects/index.md",
     "template/Template.md",
@@ -209,7 +210,6 @@
     "notes/2025/AI product development.md",
     "notes/2024/Deep learning.md",
     "Focus_Dashboard/2025-06-03.md",
-    "Focus_Dashboard/Jun 1 - Jun 8.md",
     "hire",
     "notes/2025/Untitled",
     "projects",

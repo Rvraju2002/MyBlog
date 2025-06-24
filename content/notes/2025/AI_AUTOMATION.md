@@ -1,10 +1,8 @@
 ---
-title: AI -AUTOMATION
-date: 23-06-2024
-draft: true
-tags:
+title: AI_AUTOMATION
+date:
+  - 23-06-2024
 ---
-
 
 **LEARN AI AUTOMATION WITH PLAYWRIGHT**
 
@@ -17,7 +15,7 @@ tags:
 5. Add a GitHub Actions workflow to easily run tests on CI
 6. Install Playwright browsers (default is true)
 7. To run the Playwright **npx playwright test**(this will run all test)
-8. To run specfic test **npx playwright test --spec path**
+8. To run specfic test npx playwright test --spec **path**
 9. To show report **npx playwright show-report**
 10. To run playwright using ui mode **npx playwright test --ui**
 11. To run run code with specific browser **npx playwright test --project=chromium**
@@ -32,6 +30,3 @@ tags:
 - Windows 10+, Windows Server 2016+ or Windows Subsystem for Linux (WSL).
 - macOS 14 Ventura, or later.
 - Debian 12, Ubuntu 22.04, Ubuntu 24.04, on x86-64 and arm64 architecture.
-    
-
-
