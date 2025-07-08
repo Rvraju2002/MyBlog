@@ -30,3 +30,13 @@ date:
 - Windows 10+, Windows Server 2016+ or Windows Subsystem for Linux (WSL).
 - macOS 14 Ventura, or later.
 - Debian 12, Ubuntu 22.04, Ubuntu 24.04, on x86-64 and arm64 architecture.
+
+**Browse Use Setup**
+https://github.com/browser-use/browser-use#
+
+1.To use browse Use should have python above version 3.11
+2.While install if seen any issue like unable each modules of each version then use below commad
+     If you are using a virtual environment or have specific Python versions, you might need to use **`python -m pip install --upgrade pip`** to ensure you're upgrading the correct pip.
+    **python3.11 -m pip install --upgrade pip**
+3. To install browse use with correct version **python3.11 -m pip install browser-use**
+
