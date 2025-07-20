@@ -11,10 +11,14 @@
             "id": "56f58f1df009ddcc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/notes/2025/SSH KEY GENERATION AND UPDATATIONS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "SSH KEY GENERATION AND UPDATATIONS"
             }
           }
         ]
@@ -163,8 +167,51 @@
   },
   "active": "56f58f1df009ddcc",
   "lastOpenFiles": [
-    "content/notes/2025/AI -AUTOMATION.md",
-    "content/notes/2025/Untitled.md",
-    "content/Focus_Dashboard/2025-06-12.md"
+    "public/blog/404.html",
+    "public/blog/static/og-image.png",
+    "public/blog/static/icon.png",
+    "public/blog/static/icon.jpeg",
+    "public/blog/static/giscus/light.css",
+    "public/blog/static/giscus/dark.css",
+    "public/blog/Images/WhatsApp-Image-2024-10-20-at-6.00.41-AM.jpg",
+    "public/blog/Images/Screenshot-from-2025-04-06-17-14-08.png",
+    "public/blog/Images/Screenshot-from-2025-03-20-08-21-11.png",
+    "public/blog/Images/Screenshot-from-2025-03-15-20-13-34.png",
+    "public/blog/Images/Screenshot-from-2025-02-02-17-35-00.png",
+    "public/blog/Images/Screenshot-from-2025-02-02-17-35-00-1.png",
+    "public/blog/Images/Screenshot-from-2024-12-23-08-34-20.png",
+    "public/blog/Images/png.py",
+    "public/blog/static/contentIndex.json",
+    "public/blog/index.xml",
+    "public/blog/sitemap.xml",
+    "public/blog/tags/index.html",
+    "public/blog/notes/index.html",
+    "public/blog/notes/2025/index.html",
+    "public/blog/tags/genrative_ai.html",
+    "content/notes/2025/DEVOPS.md",
+    "content/notes/2025/SSH KEY GENERATION AND UPDATATIONS.md",
+    "content/notes/2025/SETUP SSH FOR GITHUB.md",
+    "node_modules/@citation-js/name/README.md",
+    "node_modules/@citation-js/name/CHANGELOG.md",
+    "node_modules/gray-matter/node_modules/js-yaml/CHANGELOG.md",
+    "node_modules/katex/node_modules/commander/Readme.md",
+    "node_modules/@citation-js/plugin-bibjson/README.md",
+    "node_modules/fetch-ponyfill/node_modules/node-fetch/LICENSE.md",
+    "node_modules/gray-matter/node_modules/argparse/README.md",
+    "node_modules/hast-util-from-html/node_modules/unist-util-stringify-position/readme.md",
+    "node_modules/hast-util-from-parse5/node_modules/@types/unist/README.md",
+    "node_modules/hast-util-raw/node_modules/@types/unist/README.md",
+    "node_modules/rehype-katex/node_modules/unist-util-visit-parents/readme.md",
+    "node_modules/mdast-util-find-and-replace/node_modules/unist-util-visit-parents/readme.md",
+    "node_modules/mdast-util-find-and-replace/node_modules/unist-util-is/readme.md",
+    "node_modules/hast-util-to-jsx-runtime/node_modules/vfile-message/readme.md",
+    "node_modules/hast-util-from-html/node_modules/@types/unist/README.md",
+    "node_modules/hast-util-to-html/node_modules/@types/unist/README.md",
+    "node_modules/mdast-util-mdx-jsx/node_modules/unist-util-stringify-position/readme.md",
+    "node_modules/hast-util-to-jsx-runtime/node_modules/@types/unist/README.md",
+    "node_modules/mdast-util-mdx-jsx/node_modules/vfile-message/readme.md",
+    "node_modules/mdast-util-from-markdown/node_modules/@types/unist/README.md",
+    "node_modules/speech-rule-engine/node_modules/commander/Readme.md",
+    "node_modules/rehype-mathjax/node_modules/unist-util-visit-parents/readme.md"
   ]
 }
