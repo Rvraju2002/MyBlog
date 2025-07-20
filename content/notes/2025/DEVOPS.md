@@ -860,3 +860,303 @@ CopyEdit
 - 📦 **Ensure consistent builds**
     
 - 🚀 **Enable faster delivery**
+
+
+**TOOLS NEED TO INSTALL FOR START**
+
+1.ORACLE VM VIRTUALBOX
+2.GIT BASH
+3.VAGRANT
+4.CHOCOLATE/BREW
+5.JDK8
+6.VSCODE
+7.SUBLIME TEXT EDITOR
+8.AWS CLI
+
+
+## ✅ 1. **Oracle VM VirtualBox**
+
+**🔧 What it is:**  
+A **virtual machine (VM) manager** that allows you to run multiple operating systems (Linux, Windows, etc.) on your local machine without needing extra hardware.
+
+**💡 Use in DevOps:**
+
+- Create isolated environments for development, testing, or staging.
+    
+- Simulate production environments (e.g., Linux servers) on your Windows/Mac machine.
+    
+- Often used with **Vagrant** to automate VM setup.
+    
+
+**🛠️ Example Use Case:**
+
+> "Spin up a Ubuntu server locally to test Ansible playbooks."
+
+---
+
+## ✅ 2. **Git Bash**
+
+**🔧 What it is:**  
+A terminal for Windows that provides a **Unix-like shell** (Bash), bundled with **Git**.
+
+**💡 Use in DevOps:**
+
+- Gives Windows users a Linux-like command-line experience.
+    
+- Used to run Git commands, shell scripts, SSH into servers, and work with tools like Docker, Kubernetes, Ansible, etc.
+    
+- Helpful for scripting and automation on Windows.
+    
+
+**🛠️ Example Use Case:**
+
+> "Run Git commands and bash scripts for a CI/CD pipeline script."
+
+---
+
+## ✅ 3. **Vagrant**
+
+**🔧 What it is:**  
+A tool that **automates the setup of virtual machines**. Works with providers like VirtualBox, VMware, Hyper-V.
+
+**💡 Use in DevOps:**
+
+- Define and manage reproducible dev environments using a `Vagrantfile`.
+    
+- Perfect for spinning up test servers or replicating production setups on developer machines.
+    
+- Automates provisioning using shell scripts, Ansible, Puppet, etc.
+    
+
+**🛠️ Example Use Case:**
+
+> "Run `vagrant up` to instantly spin up a VM with Docker, Nginx, and Node.js pre-installed."
+
+---
+
+## ✅ 4. **Chocolatey (Windows) / Homebrew (macOS)**
+
+**🔧 What they are:**  
+Package managers — **Chocolatey** for Windows, **Homebrew** for macOS/Linux.
+
+**💡 Use in DevOps:**
+
+- Automate the installation of software and CLI tools.
+    
+- Create reproducible development environments.
+    
+- Useful in scripting and provisioning (installing tools on VMs, CI agents, etc.).
+    
+
+**🛠️ Example Use Case:**
+
+> "Install Docker, Terraform, Git, Node.js, and Python with a single command during provisioning."
+
+powershell
+
+CopyEdit
+
+`choco install git docker terraform nodejs python`
+
+---
+
+## 🧠 Summary Table
+
+|Tool|Category|DevOps Use|
+|---|---|---|
+|**VirtualBox**|Virtualization|Run VMs for isolated environments|
+|**Git Bash**|Shell + Git client|Git, scripting, SSH, bash on Windows|
+|**Vagrant**|VM Automation|Spin up dev/test environments with `Vagrantfile`|
+|**Chocolatey** / **Brew**|Package Manager|Install CLI tools & apps quickly|
+**SIGNUP**
+1. 1.GITHUB
+2. 2.DOMAIN PURCHASE(GODADDY)
+3. 3.DOCKERHUB
+4. 4.SONARCLOUD
+
+**AWS**
+- FREE TIER ACCOUNT
+- I AM WITH MFA
+- BILLING ALARM 
+- CERTIFCATE SETUP
+
+**INSTALLTIONS**:
+**Chocklaty**: This tools is used to install whatever tools using command line
+
+To install chocklatey visit https://chocolatey.org/install
+To upgrade chocklatey : choco upgrade chocolatey -y
+
+DOCKER USERNAME:**vigneshrvdevops**
+
+**LEARNING DAY 1**
+
+**CREATE IAM USER AND SETUP MFA**
+
+1.On the search bar seach IAM USER
+![[Pasted image 20250720205746.png]]
+2.Click on users and click create user
+3.![[Pasted image 20250720210206.png]]
+4.Users must create a new password at next sign-in - Recommended (SHOULD BE ENABLED)
+5.Create users
+6.Click on attach polices of give permission (Example:AdminAccess)
+7.Credentials was created you can download as .csv file
+8.Once created Click on userList on the click on you created user and search of enableMFA and setup mfa for that user
+9.On that user level Security Credentials modules was availble for remove access of console and reset password if needed
+
+CREATE GROUP FUNCTIONALITY IN IAM USER
+1.We can create group example Admins if there 4 admins available we can add that four user in that group no need to create each user have each permission setup using Attachpolices
+2.Set Boundary permissions
+Use case: if you have to user as admin permission role of adminstratorAcces he can access everything but you think he should not make any one admin in this place we can introduce setBoundary functionality below json used to do thats
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowAll",
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "DenyAttachAdministratorAccess",
+      "Effect": "Deny",
+      "Action": [
+        "iam:AttachUserPolicy",
+        "iam:AttachRolePolicy"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "ArnEquals": {
+          "iam:PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+        }
+      }
+    },
+    {
+      "Sid": "DenyInlineAdministratorActions",
+      "Effect": "Deny",
+      "Action": [
+        "iam:PutUserPolicy",
+        "iam:PutRolePolicy"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringLike": {
+          "iam:PolicyDocument": "*iam:*"
+        }
+      }
+    }
+  ]
+}
+
+
+When some try to give admin try to give admin access to someone below error will thorw
+**Policy AdministratorAccess not added.**
+**User: arn:aws:iam::274198322412:user/VigneshAdmin is not authorized to perform: iam:AttachUserPolicy on resource: user ROBERT with an explicit deny in a permissions boundary**
+
+## ✅ Policy Breakdown: What It Blocks (Explained in Depth)
+
+---
+
+### 🔒 **1. `DenyAttachAdministratorAccess`**
+
+#### 📌 Purpose:
+
+Blocks the user from **attaching the AWS-managed `AdministratorAccess` policy** to other **users or roles**.
+
+#### 🔧 How:
+
+json
+
+CopyEdit
+
+`{   "Sid": "DenyAttachAdministratorAccess",   "Effect": "Deny",   "Action": [     "iam:AttachUserPolicy",     "iam:AttachRolePolicy"   ],   "Resource": "*",   "Condition": {     "ArnEquals": {       "iam:PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"     }   } }`
+
+#### 💡 What it means:
+
+- **Explicitly blocks** actions that try to attach the policy `arn:aws:iam::aws:policy/AdministratorAccess`
+    
+- Targets these API actions:
+    
+    - `iam:AttachUserPolicy`: attach policy to a user
+        
+    - `iam:AttachRolePolicy`: attach policy to a role
+        
+
+#### ✅ Result:
+
+Even if the user has `AdministratorAccess` themselves, they **cannot attach** that same full-permission policy to **anyone else**.
+
+> 🔐 **Why it's important:** It prevents "privilege escalation" or lateral spreading of full admin rights.
+
+---
+
+### 🧨 **2. `DenyInlineAdministratorActions`**
+
+#### 📌 Purpose:
+
+Blocks users from creating **inline policies** that grant broad or admin-level access like `iam:*`, `ec2:*`, `s3:*`, etc.
+
+#### 🔧 How:
+
+json
+
+CopyEdit
+
+`{   "Sid": "DenyInlineAdministratorActions",   "Effect": "Deny",   "Action": [     "iam:PutUserPolicy",     "iam:PutRolePolicy"   ],   "Resource": "*",   "Condition": {     "StringLike": {       "iam:PolicyDocument": "*iam:*"     }   } }`
+
+#### 💡 What it means:
+
+- Blocks:
+    
+    - `iam:PutUserPolicy`: which adds an **inline policy** to a user
+        
+    - `iam:PutRolePolicy`: which adds an **inline policy** to a role
+        
+- The condition checks if the **policy content** (`iam:PolicyDocument`) contains sensitive actions like `iam:*`
+    
+
+#### ✅ Result:
+
+The user **cannot sneak in full privileges** by manually writing an inline policy like:
+
+json
+
+CopyEdit
+
+`{   "Effect": "Allow",   "Action": "iam:*",   "Resource": "*" }`
+
+> 🔐 **Why it's important:** Inline policies are often overlooked and **can grant hidden admin powers**. This denies them when they include sensitive actions.
+
+---
+
+### 🚀 Combined Effect of Both Denies
+
+|Attempted Action|Allowed?|Why|
+|---|---|---|
+|Attach `AdministratorAccess` to a user|❌ Denied|`DenyAttachAdministratorAccess`|
+|Attach `AdministratorAccess` to a role|❌ Denied|`DenyAttachAdministratorAccess`|
+|Write inline policy with `iam:*`|❌ Denied|`DenyInlineAdministratorActions`|
+|Write inline policy with `s3:GetObject`|✅ Allowed|Not blocked, it's safe|
+|Attach read-only policy to user|✅ Allowed|Boundary allows it|
+
+---
+
+## ✅ Visual Summary
+
+pgsql
+
+CopyEdit
+
+`User with AdminAccess        |        | Can do almost everything        |        ├── ✅ Create EC2, S3, etc.        ├── ✅ Create IAM roles        ├── ❌ Attach Admin policy to others      ← BLOCKED        └── ❌ Write inline policies like iam:*   ← BLOCKED`
+
+---
+
+## 🧠 Why This Matters in DevOps/Security
+
+- Prevents **unauthorized privilege escalation**
+    
+- Helps delegate tasks without **giving the keys to the kingdom**
+    
+- Encourages **least privilege access**, even for senior engineers
+
+
