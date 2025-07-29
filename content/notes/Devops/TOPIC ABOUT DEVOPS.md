@@ -1622,4 +1622,70 @@ Attach ISO file to the vm and power on to open installnation wizard
 
 Automate process
    1.Create vagrantfile (vagrant init boxname)
-2. Bringup vm (vagrant up)
+2. Bringup vm (vagrant up
+
+Virtual machine prerequest
+**Enable virtualization in bios**)(F10 while start computer)
+- VTX
+- Secure Virtual machine
+- Virtualization
+
+**Disable other windows virtualization**(Turn windows features on or off) once done just restar
+- Microsoft hyperv
+- Windows hypervisor platform
+- Windows subsytem for linux
+- Docker Desktop
+- Virtual machine platform
+
+You're trying to describe how a Virtual Machine (VM) can access a Wi-Fi network by using the host machine’s physical network adapter, especially in **bridged mode**. Here's a clearer explanation of your point, rewritten for accuracy and clarity:
+
+---
+
+### ✅ Scenario Explanation:
+
+Let’s say:
+
+- A user connects their **laptop to a Wi-Fi router**.
+    
+- The laptop gets an IP address from the router (e.g., `192.168.1.5`).
+    
+- Now, when you **create a Virtual Machine** (e.g., using VMware, VirtualBox, etc.), that VM can also get access to the **same Wi-Fi network** by using the **host laptop’s Wi-Fi adapter**.
+    
+
+---
+
+### 🛠️ How this Works (Bridge Networking):
+
+When you set the **VM's network adapter to "Bridged" mode**, it **shares the host's physical adapter** (in this case, the Wi-Fi adapter). As a result:
+
+- The **VM appears as a separate device** on the same Wi-Fi network.
+    
+- It will get its **own IP address from the router** (e.g., `192.168.1.6`).
+    
+- The router sees both the **host** and the **VM** as separate devices.
+    
+
+---
+
+### 🧠 Key Concept:
+
+> **Bridge mode** connects the VM’s virtual NIC (Network Interface Card) directly to the **host's physical NIC (Wi-Fi or Ethernet)**, making the VM act like a **physical machine on the network**.
+
+---
+
+### 🔁 Comparison with NAT Mode:
+
+|Mode|VM Gets Own IP?|Access to Local Network?|Internet Access?|
+|---|---|---|---|
+|NAT|❌ (Shares host's IP)|Limited (no incoming connections)|✅|
+|Bridged|✅ (Own IP from router)|✅ Full access|✅|
+
+---
+
+### 🧪 Example:
+
+- Host (Laptop) Wi-Fi IP: `192.168.0.100`
+    
+- VM (Bridged): Gets IP like `192.168.0.101`
+    
+- Both can ping each other and access internet/router resources.
