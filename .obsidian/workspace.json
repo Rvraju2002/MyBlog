@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/Devops/INSTALLINATION REQUIRED.md",
+                "file": "content/notes/Devops/TOPIC ABOUT DEVOPS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "INSTALLINATION REQUIRED"
+              "title": "TOPIC ABOUT DEVOPS"
             }
           }
         ]
@@ -167,10 +167,12 @@
   },
   "active": "b2e716de40de6c06",
   "lastOpenFiles": [
-    "Pasted image 20250726121944.png",
-    "Pasted image 20250726120522.png",
+    "content/notes/Devops/Vagrant Setup.md",
     "content/notes/Devops/TOPIC ABOUT DEVOPS.md",
     "content/notes/Devops/INSTALLINATION REQUIRED.md",
+    "Pasted image 20250730222732.png",
+    "Pasted image 20250726121944.png",
+    "Pasted image 20250726120522.png",
     "Pasted image 20250726114414.png",
     "Pasted image 20250726110540.png",
     "node_modules/url-parse/dist/url-parse.min.js",
@@ -204,8 +206,6 @@
     "content/notes/2025/AI_AUTOMATION.md",
     "content/notes/2025/MCP SERCER.md",
     "public/blog/static/og-image.png",
-    "public/blog/static/icon.png",
-    "public/blog/static/icon.jpeg",
     "content/notes/2025/SETUP SSH FOR GITHUB.md",
     "node_modules/@citation-js/name/README.md",
     "node_modules/@citation-js/name/CHANGELOG.md",
