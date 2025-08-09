@@ -301,11 +301,50 @@ But for production, use **cloud providers like AWS, Azure, or DigitalOcean**.
 
 ## ✅ Summary
 
-|Component|Hosted On|Purpose|
-|---|---|---|
-|Frontend|S3 + CloudFront|Serve static website|
-|Backend|EC2 (Ubuntu/Red Hat)|Handle APIs, business logic|
-|DB|MongoDB Atlas|Data storage|
-|DNS|Route 53 / GoDaddy|Domain name mapping|
-|CDN (optional)|CloudFront|Speed & cache static content|
-|Web Server|Nginx/Apache|Route traffic to app on EC2|
+| Component      | Hosted On            | Purpose                      |
+| -------------- | -------------------- | ---------------------------- |
+| Frontend       | S3 + CloudFront      | Serve static website         |
+| Backend        | EC2 (Ubuntu/Red Hat) | Handle APIs, business logic  |
+| DB             | MongoDB Atlas        | Data storage                 |
+| DNS            | Route 53 / GoDaddy   | Domain name mapping          |
+| CDN (optional) | CloudFront           | Speed & cache static content |
+| Web Server     | Nginx/Apache         | Route traffic to app on EC2  |
+
+
+**LINUX COMMANDS**
+   1.ls -- show file in that folder
+2. cd foldername -- go that folder
+3. cat foler -- open that folder
+4. mkdir foldername -- create folder
+5. mkdir folder1 foldername 2 --create multiple folder
+6. touch filetext1.text --create empty
+7. touch devopsfile{1..10}.text -- create 10 file with 1 to 10 with prefix of devops
+8. cp -- it used to copy from source and paste in destination(example useage: cp devopsfile.ext dev/)
+9. cd ~ --go to homedirectory
+10. cp -r dev backupdir/  -- copy director and paste directory
+11. mv  source and destination -- it used move file from source to destination
+12. mv devops1.text devops22.text -- it rename as well
+13. mv  '*.text textdir' -- it mean it move all text to text dir
+14. rm filename ---remove filename and can remove director but use  -r
+15. rm -rf -- forecefull delte
+
+**VIM EDITOR**
+
+1.command mode
+2.insert mode
+3.extend command mode
+1.Need to install vim editor
+sudo yum install vim -y
+
+vim file1.text -- create file with editor mode
+click i -- it used for edit file
+once edited click on escape for back to command
+:w for save the file
+escape
+:q -- go back to termianl
+
+:wq save and quit
+:q!  -- forcefull quit without changes reflect
+
+
+     

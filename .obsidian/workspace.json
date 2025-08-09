@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/Devops/TOPIC ABOUT DEVOPS.md",
+                "file": "content/notes/Devops/LINUX TOPIC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TOPIC ABOUT DEVOPS"
+              "title": "LINUX TOPIC"
             }
           }
         ]
@@ -167,14 +167,20 @@
   },
   "active": "b2e716de40de6c06",
   "lastOpenFiles": [
-    "content/notes/Devops/Vagrant Setup.md",
     "content/notes/Devops/TOPIC ABOUT DEVOPS.md",
+    "content/notes/Devops/Vagrant Setup.md",
+    "content/notes/Devops/LINUX TOPIC.md",
+    "content/Images/Pasted image 20250809104403.png",
+    "content/Images/Pasted image 20250803190048.png",
+    "content/Images/Pasted image 20250803185130.png",
+    "content/Images/Pasted image 20250803184928.png",
+    "content/Images/Pasted image 20250803184722.png",
+    "content/Images/Pasted image 20250803184522.png",
+    "content/Images/Pasted image 20250803184347.png",
+    "content/Images/Pasted image 20250803184221.png",
+    "content/Images/Pasted image 20250803183507.png",
+    "content/Images/Pasted image 20250802170406.png",
     "content/notes/Devops/INSTALLINATION REQUIRED.md",
-    "Pasted image 20250730222732.png",
-    "Pasted image 20250726121944.png",
-    "Pasted image 20250726120522.png",
-    "Pasted image 20250726114414.png",
-    "Pasted image 20250726110540.png",
     "node_modules/url-parse/dist/url-parse.min.js",
     "node_modules/url-parse/dist/url-parse.min.js.map",
     "node_modules/url-parse/dist/url-parse.js",
@@ -187,7 +193,6 @@
     "node_modules/toml/test/table_arrays_easy.toml",
     "node_modules/require-from-string/readme.md",
     "node_modules/character-reference-invalid/readme.md",
-    "Pasted image 20250726110526.png",
     "content/notes/2025/DEVOPS.md",
     "content/notes/Untitled.md",
     "node_modules/querystringify/README.md",
@@ -199,19 +204,13 @@
     "node_modules/comma-separated-tokens/readme.md",
     "node_modules/@citation-js/plugin-bibtex/LICENSE.md",
     "node_modules/@citation-js/plugin-bibtex/README.md",
-    "Pasted image 20250720222043.png",
-    "Pasted image 20250720210206.png",
-    "Pasted image 20250720205746.png",
     "content/notes/2025/SSH KEY GENERATION AND UPDATATIONS.md",
     "content/notes/2025/AI_AUTOMATION.md",
     "content/notes/2025/MCP SERCER.md",
-    "public/blog/static/og-image.png",
     "content/notes/2025/SETUP SSH FOR GITHUB.md",
     "node_modules/@citation-js/name/README.md",
     "node_modules/@citation-js/name/CHANGELOG.md",
     "node_modules/gray-matter/node_modules/js-yaml/CHANGELOG.md",
-    "node_modules/katex/node_modules/commander/Readme.md",
-    "node_modules/@citation-js/plugin-bibjson/README.md",
-    "node_modules/fetch-ponyfill/node_modules/node-fetch/LICENSE.md"
+    "node_modules/katex/node_modules/commander/Readme.md"
   ]
 }

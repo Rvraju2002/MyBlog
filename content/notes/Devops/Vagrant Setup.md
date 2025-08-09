@@ -67,3 +67,16 @@ if you change box name then delete vm and create vm using that box name
 **important: should poweroff vm before power of computer**
 
 ![](../../Images/Pasted%20image%2020250809104403.png)
+
+
+/etc/os-release = have cofiguration os in vm
+
+sudo -i == it is used to switch root home director  -- **root home directory**
+once swiched cd/ it used to root directory that contains all files of system  --**root directory**
+
+/bin or anything it means it was absolute path
+
+/root/proc  -- uptime
+free -m -- it show ram remaining
+
+if you want to switch to home directory then give **exit** commad from root directory
