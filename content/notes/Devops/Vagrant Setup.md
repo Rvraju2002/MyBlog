@@ -65,3 +65,5 @@ if you change box name then delete vm and create vm using that box name
 **vagrant global-status** using this command you can get id of created vm and you can delete vagrant destort _id this used to delete that vm using id
 
 **important: should poweroff vm before power of computer**
+
+![](../../Images/Pasted%20image%2020250809104403.png)
