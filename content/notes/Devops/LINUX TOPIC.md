@@ -346,5 +346,7 @@ escape
 :wq save and quit
 :q!  -- forcefull quit without changes reflect
 
+![](../../Images/Pasted%20image%2020250809192459.png)
+
 
      

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Devops/Vagrant Setup.md",
+                "file": "notes/Devops/LINUX TOPIC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vagrant Setup"
+              "title": "LINUX TOPIC"
             }
           }
         ]
@@ -182,6 +182,8 @@
   },
   "active": "7472d541dc933b6c",
   "lastOpenFiles": [
+    "Images/Pasted image 20250809192459.png",
+    "notes/Devops/Vagrant Setup.md",
     "Images/Pasted image 20250809104403.png",
     "notes/Devops/LINUX TOPIC.md",
     "Images/Pasted image 20250803190048.png",
@@ -192,9 +194,7 @@
     "Images/Pasted image 20250803184347.png",
     "Images/Pasted image 20250803184221.png",
     "Images/Pasted image 20250803183507.png",
-    "notes/Devops/Vagrant Setup.md",
     "Images/Pasted image 20250802170406.png",
-    "Images/Pasted image 20250802170008.png",
     "notes/Devops/INSTALLINATION REQUIRED.md",
     "notes/Devops/TOPIC ABOUT DEVOPS.md",
     "notes/2025/DEVOPS.md",
