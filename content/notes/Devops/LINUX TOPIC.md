@@ -346,7 +346,27 @@ escape
 :wq save and quit
 :q!  -- forcefull quit without changes reflect
 
+
 ![](../../Images/Pasted%20image%2020250809192459.png)
+dd --delete the entire line
+ndd -- to delete no.of line from curosr position(5dd)
+/netwotk  -- To search a word in the file on the network you need specify which word you need to find
 
 
+1. i -- instert text
+2. :w --save the text
+3. :q --quit the editor
+4. :wq -- save and quit the editor
+5. esc -- back to command
+6. :se nu -- if more line of code each line number will set
+7. shift + g -- it goes to last of line code
+8. shif + g g -- it goes to first line of code9
+9. yy -- when you are any line giving this command it copy that line
+10. p -- pase the copy line
+11. P - captial p paste of which line you're
+12. 4yy --it means which line you're from that line 4 line you copy
+13. dd -- delete the line
+14. u -- undo the delete line
+15. 5dd --delete 5 line   -- dd means cut the line so can we use for p for paste
+16. 
      
