@@ -368,5 +368,46 @@ ndd -- to delete no.of line from curosr position(5dd)
 13. dd -- delete the line
 14. u -- undo the delete line
 15. 5dd --delete 5 line   -- dd means cut the line so can we use for p for paste
-16. 
+
+![](../../Images/Pasted%20image%2020250810101943.png)
+
+File in linux
+ls -l it give more information about files
+file filename -- this give how file are it waa text file script file like thT
+
+--  if hypen is before text it meanss it was text file
+d -- this means directory
+c -- this was characterstic file example keyboard
+b -- this for hard disk(block file)
+l -- link file (shortcuts)
+example : mkdir /opt/dev/ops/devops/text -when creating it thrown an cannot create directort
+mkdir - p  /opt/dev/ops/devops/text it create
+vim  /opt/dev/ops/devops/text/commands.text --just add anything
+ls -n  /opt/dev/ops/devops/text  cmds -- it links cmds with that path
+you can access that using only cat cmds don't need absolute path
+
+ls -lt   -- it show sort based on timestamp
+ls -ltr   --it show in reverse sort based on timestamp
+
+
+4.Filter & IO redirection command
+GREP
+
+1. grep textname filename -- it get that text show in output and linux is casesensitive
+2. grep -i textname filename --it gets all of result i commad is used to remove casesentive
+3. grep -i firewall *  -- it get firewall text entire file in that directory(but it ignore dirctory if available it means folder)
+4. grep -iR firewall *   -it show results including directory
+5. grep -vi firewall filename --it show all results except text firewall 
+6. less filename -- we can read and using /text we search
+7. more filename --using enter we can go to next line
+8. head -2 filename -- first two line will show on that file
+9. tail --filename --it show last 10 lines (tail -2 ) we ca use like that also
+10. tail -f filename -- it show the file with updating version example we use for logs it keep on updating
+11. cut -d: f2 filename -- example in username:no:rollno like this using this  we can only print rollno
+12. awk  - it can use regular expression
+13. awk -F':' ' {print $1}' filename
+14. %s/textname/changetext/g --- textname text appeard in file and change text replace textname it chnage text globall in that file
+15. sed '/s/textname/replacename/g' *  it find textname in that directory in all file change into replacename
+16. sed -i '/s/textname/replacename/g' 
+
      
