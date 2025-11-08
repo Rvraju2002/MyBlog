@@ -10,25 +10,49 @@
     <link>https://programmerraja.github.io/notes/2025/AI_AUTOMATION</link>
     <guid>https://programmerraja.github.io/notes/2025/AI_AUTOMATION</guid>
     <description>LEARN AI AUTOMATION WITH PLAYWRIGHT INSTALLNATION: Open vs code npm init playwright@latest Choose between TypeScript or JavaScript (default is TypeScript) Name of your Tests ...</description>
-    <pubDate>Sun, 20 Jul 2025 11:55:09 GMT</pubDate>
+    <pubDate>Sat, 08 Nov 2025 13:41:18 GMT</pubDate>
   </item><item>
-    <title>SSH KEY GENERATION AND UPDATATIONS</title>
-    <link>https://programmerraja.github.io/notes/2025/SSH-KEY-GENERATION-AND-UPDATATIONS</link>
-    <guid>https://programmerraja.github.io/notes/2025/SSH-KEY-GENERATION-AND-UPDATATIONS</guid>
-    <description>HELLOS.</description>
-    <pubDate>Sun, 20 Jul 2025 11:54:35 GMT</pubDate>
+    <title>LINUX TOPIC</title>
+    <link>https://programmerraja.github.io/notes/Devops/LINUX-TOPIC</link>
+    <guid>https://programmerraja.github.io/notes/Devops/LINUX-TOPIC</guid>
+    <description>...</description>
+    <pubDate>Wed, 27 Aug 2025 06:27:28 GMT</pubDate>
+  </item><item>
+    <title>Vagrant Setup</title>
+    <link>https://programmerraja.github.io/notes/Devops/Vagrant-Setup</link>
+    <guid>https://programmerraja.github.io/notes/Devops/Vagrant-Setup</guid>
+    <description>sdvVAGRANT TOOLS Its a tool for writing automation script for create vm Manual VM mangement problem 1.OS installnation 2.Time consuming 3.Manul⇒ humar error 4.Tough to replicate ...</description>
+    <pubDate>Sat, 09 Aug 2025 05:15:46 GMT</pubDate>
+  </item><item>
+    <title>INSTALLINATION REQUIRED</title>
+    <link>https://programmerraja.github.io/notes/Devops/INSTALLINATION-REQUIRED</link>
+    <guid>https://programmerraja.github.io/notes/Devops/INSTALLINATION-REQUIRED</guid>
+    <description>INSTALLNATON TOOLS 1.ORACLE VM VIRTUALBOX 2.GIT BASH 3.VAGRANT 4.CHOCOLATE/BREW 5.JDK8 6.VSCODE 7.SUBLIME TEXT EDITOR 8.AWS CLI Virtual machine prerequest Enable virtualization ...</description>
+    <pubDate>Thu, 24 Jul 2025 16:38:14 GMT</pubDate>
+  </item><item>
+    <title>TOPIC ABOUT DEVOPS</title>
+    <link>https://programmerraja.github.io/notes/Devops/TOPIC-ABOUT-DEVOPS</link>
+    <guid>https://programmerraja.github.io/notes/Devops/TOPIC-ABOUT-DEVOPS</guid>
+    <description>...</description>
+    <pubDate>Thu, 24 Jul 2025 16:37:48 GMT</pubDate>
   </item><item>
     <title>DEVOPS</title>
     <link>https://programmerraja.github.io/notes/2025/DEVOPS</link>
     <guid>https://programmerraja.github.io/notes/2025/DEVOPS</guid>
-    <description> .</description>
-    <pubDate>Sun, 20 Jul 2025 11:53:57 GMT</pubDate>
+    <description>...</description>
+    <pubDate>Sun, 20 Jul 2025 12:19:35 GMT</pubDate>
   </item><item>
     <title>MCP SERCER</title>
     <link>https://programmerraja.github.io/notes/2025/MCP-SERCER</link>
     <guid>https://programmerraja.github.io/notes/2025/MCP-SERCER</guid>
     <description>MCP Server The full form of MCP server, in the context of AI and large language models, is Model Context Protocol server. It acts as a standardized way for AI models to connect with external tools, systems, and data sources.</description>
-    <pubDate>Sun, 20 Jul 2025 11:53:57 GMT</pubDate>
+    <pubDate>Sun, 20 Jul 2025 12:17:14 GMT</pubDate>
+  </item><item>
+    <title>SSH KEY GENERATION AND UPDATATIONS</title>
+    <link>https://programmerraja.github.io/notes/2025/SSH-KEY-GENERATION-AND-UPDATATIONS</link>
+    <guid>https://programmerraja.github.io/notes/2025/SSH-KEY-GENERATION-AND-UPDATATIONS</guid>
+    <description>HELLOS.</description>
+    <pubDate>Sun, 20 Jul 2025 12:17:14 GMT</pubDate>
   </item><item>
     <title>genrative_ai</title>
     <link>https://programmerraja.github.io/tags/genrative_ai</link>
@@ -41,12 +65,6 @@
     <guid>https://programmerraja.github.io/</guid>
     <description>Hi vicky.</description>
     <pubDate>Sun, 20 Jul 2025 11:38:35 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://programmerraja.github.io/projects/</link>
-    <guid>https://programmerraja.github.io/projects/</guid>
-    <description>Over the years, I’ve worked on a wide range of projects — from weekend experiments to solutions for real-world problems. Here’s a curated list of some of my favorites:.</description>
-    <pubDate>Sun, 04 May 2025 04:25:25 GMT</pubDate>
   </item>
     </channel>
   </rss>
