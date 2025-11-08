@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "LINUX TOPIC"
             }
+          },
+          {
+            "id": "86ec26adf7f72017",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/notes/Devops/LINUX TOPIC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LINUX TOPIC"
+            }
           }
         ]
       }
@@ -157,6 +171,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -167,21 +182,22 @@
   },
   "active": "b2e716de40de6c06",
   "lastOpenFiles": [
-    "content/Images/Pasted image 20250809192459.png",
+    "content/notes/Devops/INSTALLINATION REQUIRED.md",
     "content/notes/Devops/TOPIC ABOUT DEVOPS.md",
-    "content/notes/Devops/Vagrant Setup.md",
     "content/notes/Devops/LINUX TOPIC.md",
+    "content/notes/Devops/Vagrant Setup.md",
+    "Pasted image 20251106202139.png",
+    "Pasted image 20251106195618.png",
+    "content/Images/Pasted image 20250810101943.png",
+    "content/notes/2025/SSH KEY GENERATION AND UPDATATIONS.md",
+    "content/notes/2025/DEVOPS.md",
+    "content/Images/Pasted image 20250809192459.png",
     "content/Images/Pasted image 20250809104403.png",
     "content/Images/Pasted image 20250803190048.png",
     "content/Images/Pasted image 20250803185130.png",
     "content/Images/Pasted image 20250803184928.png",
     "content/Images/Pasted image 20250803184722.png",
     "content/Images/Pasted image 20250803184522.png",
-    "content/Images/Pasted image 20250803184347.png",
-    "content/Images/Pasted image 20250803184221.png",
-    "content/Images/Pasted image 20250803183507.png",
-    "content/Images/Pasted image 20250802170406.png",
-    "content/notes/Devops/INSTALLINATION REQUIRED.md",
     "node_modules/url-parse/dist/url-parse.min.js",
     "node_modules/url-parse/dist/url-parse.min.js.map",
     "node_modules/url-parse/dist/url-parse.js",
@@ -194,7 +210,6 @@
     "node_modules/toml/test/table_arrays_easy.toml",
     "node_modules/require-from-string/readme.md",
     "node_modules/character-reference-invalid/readme.md",
-    "content/notes/2025/DEVOPS.md",
     "content/notes/Untitled.md",
     "node_modules/querystringify/README.md",
     "node_modules/path-parse/README.md",
@@ -205,7 +220,6 @@
     "node_modules/comma-separated-tokens/readme.md",
     "node_modules/@citation-js/plugin-bibtex/LICENSE.md",
     "node_modules/@citation-js/plugin-bibtex/README.md",
-    "content/notes/2025/SSH KEY GENERATION AND UPDATATIONS.md",
     "content/notes/2025/AI_AUTOMATION.md",
     "content/notes/2025/MCP SERCER.md",
     "content/notes/2025/SETUP SSH FOR GITHUB.md",

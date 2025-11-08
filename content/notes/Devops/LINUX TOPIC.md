@@ -410,4 +410,46 @@ GREP
 15. sed '/s/textname/replacename/g' *  it find textname in that directory in all file change into replacename
 16. sed -i '/s/textname/replacename/g' 
 
+I/0 direction
+1. ls > /tmp/systeminfo.text --- this command store ls what they file currenty in that text file
+2. cat etc/passwd >> /tmp/systeminfo.text   - double greathn is used to it doesn't overwrite it just append
+3. uptime-- show system stroange
+4. free -m it show details information storage
+5. df -h --it show detail folder which consume more storage
+6. wc -l /etc/passwd --count number of line
+7.  ls | wc -l -- it used to show how many files
+8. grep -- it used to search name from files or folder
+9. ls | grep textname 
+10. ls -l | head
+👉 Here’s what it does:
+
+ls -l → lists files in the current directory in long format (with details like permissions, owner, size, timestamp).
+
+The pipe | sends that output to the next command.
+
+head → shows the first 10 lines by default.
+
+So this will show the first 10 entries of your directory lis
+
+11. find /etc name host*
+
+
+USERS & GROUPS
+
+useradd -m test -- this add user(add user with home directory)
+
+id test - this show id of user 
+
+gropadd devops   -- this create like folder
+
+open vim editor on devops add after: test and save
+now test in devops groups
+
+lsof -u vagrant -- its used to what are file used vagrant
+lsof -u aws --it used to aws user logged in 
+userdel - vicky ---delete user
+ rm -rf /home/vicky --delyter hoem director folder
+
+
+
      
